@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Social Dashboard Portal</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="header-brand">
+        <h1>SocialSync // Hub</h1>
+      </div>
+      <div class="header-actions">
+        <button id="theme-toggle-btn">Toggle Interface Theme</button>
+      </div>
+    </header>
+
+    <div class="alert-marquee-bar">
+      <div id="holiday-alert-panel">
+        Awaiting connection to UK Gov API server...
+      </div>
+    </div>
+
+    <main class="dashboard-grid">
+      <section class="composition-sidebar">
+        <div class="card-wrapper">
+          <h3>Create New Update</h3>
+          <p class="instruction-note">
+            Tell your friends what you're up to today.
+          </p>
+
+          <form id="feed-form">
+            <div class="form-group">
+              <label for="form-message">Status Broadcast Message</label>
+              <textarea
+                id="form-message"
+                placeholder="What are you working on today? Type your update text here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="primary-action-btn">
+              Broadcast Status
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="timeline-stream">
+        <h2>Timeline</h2>
+        <div id="posts-feed">
+          <p class="status-placeholder">Initialising...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="system-footer">
+      <p>SocialSync Portal</p>
+    </footer>
+
+  </body>
+</html>
